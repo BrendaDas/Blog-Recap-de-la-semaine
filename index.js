@@ -1,3 +1,5 @@
+import './style.css';
+
 const card = (title, description, image, soustitre) => `
   <div class="col-lg-4 col-sm-12">
     <div class="card mb-5 shadow-sm">
@@ -30,7 +32,8 @@ const card = (title, description, image, soustitre) => `
   const myData = [
     {
       title: 'Univers du web',
-      description:'Hello! <br> Alors pour une prémiere journéé ayant attrapé la',
+      description:
+        '',
       image: 'https://picsum.photos/id/238/1000/1600.jpg',
       soustitre: 'Lundi 14 Novembre 2022',
     },
