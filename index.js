@@ -32,8 +32,7 @@ const card = (title, description, image, soustitre) => `
   const myData = [
     {
       title: 'OpenClassRoom',
-      description:
-        '',
+      description: '',
       image: 'https://picsum.photos/id/238/1000/1600.jpg',
       soustitre: 'Lundi 14 Novembre 2022',
     },
@@ -78,4 +77,19 @@ const card = (title, description, image, soustitre) => `
       post.soustitre
     );
   });
+})();
+
+(async () => {
+  await fetch(
+    'https://api.airtable.com/v0/app7WHpsbeFA9BKmD/tble47DGXvXgj1LzB',
+    {
+      headers: {
+        Authorization: 'Bearer keyopqdrkn6QmHWva',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      },
+    }
+  )
+    .then((response) => response.json())
+    .then((json) => console.log(json));
 })();
