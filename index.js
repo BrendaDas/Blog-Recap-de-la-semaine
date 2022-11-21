@@ -26,12 +26,12 @@ const card = (title, description, image, soustitre) => `
 `;
 (async () => {
   const apiData = await fetch(
-    'https://jsonplaceholder.typicode.com/posts'
+    'https://api.airtable.com/v0/app7WHpsbeFA9BKmD/tble47DGXvXgj1LzB'
   ).then((response) => response.json());
 
   const myData = [
     {
-      title: 'Univers du web',
+      title: 'OpenClassRoom',
       description:
         '',
       image: 'https://picsum.photos/id/238/1000/1600.jpg',
