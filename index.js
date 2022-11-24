@@ -32,7 +32,7 @@ const card = (title, description, image, soustitre) => `
   const myData = [
     {
       title: 'OpenClassRoom',
-      description: 'Inscription sur classroo,',
+      description: 'Inscription sur classroom',
       image: 'https://picsum.photos/id/238/1000/1600.jpg',
       soustitre: 'Lundi 14 Novembre 2022',
     },
